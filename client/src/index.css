@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Outfit:wght@100..900&family=Playpen+Sans:wght@400;600&family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Outfit
+}
+
+@layer base{
+    html{
+    scroll-behavior: smooth;
+  }
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.rich-text {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #444;
+    word-wrap: break-word;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2d3748;
+    margin: 1.2em 0 0.6em;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  
+  ol {
+    margin: 0 0 1.5em 1.5em; /* Space for indentation */
+    padding: 0;
+    list-style-type: decimal; /* Numbered list */
+  }
+  
+  ol li {
+    margin-bottom: 0.8em; /* Spacing between list items */
+    padding-left: 0.4em; /* Space between number and text */
+    color: #555;
+  }
+  
+  ol li::marker {
+    font-weight: bold; /* Highlight numbers */
+    color: #2d3748; /* Darker color for numbers */
+  }
+  
+  ul {
+    margin: 0 0 1.5em 1.5em;
+    padding: 0;
+    list-style-type: disc; /* Bulleted list */
+  }
+  
+  ul li {
+    margin-bottom: 0.8em;
+    padding-left: 0.4em;
+  }
+  
