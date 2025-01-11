@@ -50,7 +50,7 @@ const ViewApplications = () => {
     },[companyToken])
 
 
-  return applications ? applications.length !== 0 ? (
+  return applications ? applications.length === 0 ? (
     <div className='flex items-center justify-center h-[70vh]'>
     <p className='text-xl sm:text-2xl'>No Applications Posted</p>
   </div> 
